@@ -24,13 +24,15 @@ The assumption is also made that you have the CakePHP framework installed at /op
 3. Make whatever changes are necessary in database.php (i.e., edit the $default array that starts at line 62 so that it points at your PowerDNS MySQL database.
 4. At the time of writing I haven't implemented a proper auth system so you'll need to make use of .htaccess and Apache's built-in basic authentication stuff. We also need to add some rewrite stuff to the .htaccess file to make the app work. Assuming your htpasswd file is /etc/apache2/pdnsedit.htpass, edit your .htaccess file so that it looks like this:
 
-    ```<IfModule mod_rewrite.c>
-           RewriteEngine on
-           RewriteRule    ^$ app/webroot/    [L]
-           RewriteRule    (.*) app/webroot/$1 [L]
-       </IfModule>
-       AuthType Basic
-       AuthName "PDNS Editor"
-       AuthUserFile /etc/apache2/pdnsedit.htpass
-       Require valid-user```
+    ```apache
+    <IfModule mod_rewrite.c>
+      RewriteEngine on
+      RewriteRule    ^$ app/webroot/    [L]
+      RewriteRule    (.*) app/webroot/$1 [L]
+    </IfModule>
+    AuthType Basic
+    AuthName "PDNS Editor"
+    AuthUserFile /etc/apache2/pdnsedit.htpass
+    Require valid-user
+```
 
