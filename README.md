@@ -13,7 +13,7 @@ These instructions assume that you want to host the UI in a folder off your webs
 The assumption is also made that you have the CakePHP framework installed at /opt/frameworks/cakephp. Again, you will have to adapt as needed but I can offer one or two tips that might help below.
 
 1. Create a directory in your webroot directory called pdnsedit and clone the repo into it:
-```git clone https://github.com/dermotw/pdnsedit```
+    ```git clone https://github.com/dermotw/pdnsedit```
 2. Create database.php:
 ```cd app/Config
 cp database.php.default database.php```
