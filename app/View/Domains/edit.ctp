@@ -13,13 +13,13 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
   <a href='#delConfirm' class='btn btn-danger' title='Delete this domain' data-toggle='modal'><i class='icon-trash icon-white'></i>Delete</a>
  </div>
 </div>
-<div class="row">
- <div class="span8 well">
-  <form class="form-horizontal" id="soaForm" action="/Record/editSOA" method="GET">
+<div class="row-fluid">
+ <div class="span3 well">
+  <form class="form" id="soaForm" action="/Record/editSOA" method="GET">
    <div class="control-group">
     <label class="control-label" for="mname">Primary Name Server</label>
     <div class="controls">
-     <input type="text" class="input-xlarge" id="mname">
+     <input type="text" class="input" id="mname">
     </div>
    </div>
    <div class="control-group">
@@ -62,8 +62,7 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
    </div>
   </form>
  </div>
-</div>
-<div class="row">
+ <div class="span8">
  <table class='table table-striped'>
   <thead>
    <tr><th colspan='5'>
@@ -120,6 +119,7 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
 <?php endforeach; ?>
   </tbody>
  </table>
+ </div>
 </div>
 <?php 
 echo $this->element('confirm', array(
