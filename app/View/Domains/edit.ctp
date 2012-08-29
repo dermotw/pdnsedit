@@ -1,6 +1,8 @@
 <?php
 $theDomain = $domain['Domain'];
 $theRecords = $records;
+$theSOA = $soa;
+$soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
 ?>
 <div class="row">
  <div class='span6'>
@@ -9,6 +11,56 @@ $theRecords = $records;
  <div class='span2 offset4'>
   <!-- <a href='/Domains/DeleteDomain/<?php echo $theDomain['id']; ?>' class='btn btn-danger' title='Delete this domain' id='btnDel'><i class='icon-trash icon-white'></i>Delete</a> -->
   <a href='#delConfirm' class='btn btn-danger' title='Delete this domain' data-toggle='modal'><i class='icon-trash icon-white'></i>Delete</a>
+ </div>
+</div>
+<div class="row">
+ <div class="span8 well">
+  <form class="form-horizontal" id="soaForm" action="/Record/editSOA" method="GET">
+   <div class="control-group">
+    <label class="control-label" for="mname">Primary Name Server</label>
+    <div class="controls">
+     <input type="text" class="input-xlarge" id="mname">
+    </div>
+   </div>
+   <div class="control-group">
+    <label class="control-label" for="rname">Hostmaster Email Address</label>
+    <div class="controls">
+     <input type="text" class="input-xlarge" id="rname">
+     <p class="help-block">Note that the '@' should be replaced with a '.'</p>
+    </div>
+   </div>
+   <div class="control-group">
+    <label class="control-label" for="snum">Serial Number</label>
+    <div class="controls">
+     <input type="text" class="input-xlarge" id="snum">
+     <p class="help-block">The serial number is updated automatically when you modify, add or delete a record</p>
+    </div>
+   </div>
+   <div class="control-group">
+    <label class="control-label" for="refresh">Refresh</label>
+    <div class="controls">
+     <input type="text" class="input-xlarge" id="refresh">
+    </div>
+   </div>
+   <div class="control-group">
+    <label class="control-label" for="retry">Retry</label>
+    <div class="controls">
+     <input type="text" class="input-xlarge" id="retry">
+    </div>
+   </div>
+   <div class="control-group">
+    <label class="control-label" for="expire">Expire</label>
+    <div class="controls">
+     <input type="text" class="input-xlarge" id="expire">
+    </div>
+   </div>
+   <div class="control-group">
+    <label class="control-label" for="minttl">Minimum TTL</label>
+    <div class="controls">
+     <input type="text" class="input-xlarge" id="minttl">
+    </div>
+   </div>
+  </form>
  </div>
 </div>
 <div class="row">
