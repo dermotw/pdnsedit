@@ -142,6 +142,9 @@ echo $this->element('editRecord');
 $('.helptool').tooltip({
 	placement: 'right'
 });
+
+// Show the record deletion dialog
+//
 $(".recDelete").click( function() {
 	var recType = $(this).attr('rec-type');
 	var recId = $(this).attr('rec-id');
@@ -149,6 +152,9 @@ $(".recDelete").click( function() {
 	$("#delRecord_btnConfirm").attr('href', '/Records/DeleteRecord/' + recId );
 	$("#delRecord").modal('show');
 });
+
+// Show the record editig dialog
+//
 $(".recEdit").click( function() {
 	var recId = $(this).attr('rec-id');
 	var recName = $(this).attr('rec-name');
