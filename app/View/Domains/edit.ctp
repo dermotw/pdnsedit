@@ -19,50 +19,50 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
    <div class="control-group">
     <label class="control-label" for="mname">Primary Name Server</label>
     <div class="controls">
-     <input type="text" class="input" id="mname">
+     <input type="text" class="input-medium" id="mname" value="<?php echo $soaFields[0] ?>">
     </div>
    </div>
    <div class="control-group">
     <label class="control-label" for="rname">Hostmaster Email Address</label>
     <div class="controls">
-     <input type="text" class="input-xlarge" id="rname">
-     <p class="help-block">Note that the '@' should be replaced with a '.'</p>
+     <div class="input-append"><input type="text" class="input-medium" id="rname" value="<?php echo $soaFields[1] ?>">
+     <span class="add-on"><a class='helptool' href="#" rel="tooltip" title="The email address for the hostmaster. Replace the '@' with a period ('.')"><i class="icon-question-sign"></i></a></span></div>
     </div>
    </div>
    <div class="control-group">
     <label class="control-label" for="snum">Serial Number</label>
     <div class="controls">
-     <input type="text" class="input-xlarge" id="snum">
-     <p class="help-block">The serial number is updated automatically when you modify, add or delete a record</p>
+     <div class="input-append"><input type="text" class="input-medium" id="snum" value="<?php echo $soaFields[2] ?>">
+     <span class="add-on"><a class="helptool" href="#" rel="tooltip" title="The serial number is updated automatically when you modify, add or delete a record"><i class="icon-question-sign"></i></a></span></div>
     </div>
    </div>
    <div class="control-group">
     <label class="control-label" for="refresh">Refresh</label>
     <div class="controls">
-     <input type="text" class="input-xlarge" id="refresh">
+     <input type="text" class="input-medium" id="refresh" value="<?php echo $soaFields[3] ?>">
     </div>
    </div>
    <div class="control-group">
     <label class="control-label" for="retry">Retry</label>
     <div class="controls">
-     <input type="text" class="input-xlarge" id="retry">
+     <input type="text" class="input-medium" id="retry" value="<?php echo $soaFields[4] ?>">
     </div>
    </div>
    <div class="control-group">
     <label class="control-label" for="expire">Expire</label>
     <div class="controls">
-     <input type="text" class="input-xlarge" id="expire">
+     <input type="text" class="input-medium" id="expire" value="<?php echo $soaFields[5] ?>">
     </div>
    </div>
    <div class="control-group">
     <label class="control-label" for="minttl">Minimum TTL</label>
     <div class="controls">
-     <input type="text" class="input-xlarge" id="minttl">
+     <input type="text" class="input-medium" id="minttl" value="<?php echo $soaFields[6] ?>">
     </div>
    </div>
   </form>
  </div>
- <div class="span8">
+ <div class="span9">
  <table class='table table-striped'>
   <thead>
    <tr><th colspan='5'>
@@ -137,6 +137,11 @@ echo $this->element('confirm', array(
 echo $this->element('editRecord');
 ?>
 <script>
+// add the tooltip stuffs
+//
+$('.helptool').tooltip({
+	placement: 'right'
+});
 $(".recDelete").click( function() {
 	var recType = $(this).attr('rec-type');
 	var recId = $(this).attr('rec-id');
