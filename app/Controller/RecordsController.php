@@ -21,6 +21,8 @@ class RecordsController extends AppController {
 
 	public function add() {
 		$theDomain = $this->data['domain'];
+
+
 		// Need to see if the record is a PTR
 		//
 		if ( $this->data['type'] == 'PTR' ) {
@@ -38,10 +40,20 @@ class RecordsController extends AppController {
 				'ttl' => 86400
 				);
 
+		// We need to get the SOA so that we can increment the
+		// serial
+		$theSOA = $this->Record->findByDomainIdAndType ( $domainInfo['Domain']['id'], 'SOA' );
+		$soaContent = preg_split( '/ /', $theSOA['Record']['content'], -1 );
+		$dnsSerial = date('YmdHi');
+		if ( $dnsSerial == $soaContent[2] ) { $dnsSerial ++; }
+		$soaContent['2'] = $dnsSerial;
+		$theSOA['Record']['content'] = implode( ' ', $soaContent );
+
 		try {
 			if( $this->Record->save( $recordData ) ) {
 				$this->Session->setFlash('<h1>Record added!</h1><p>Nice one.</p>');
 			} 
+			$this->Record->save( $theSOA );
 		} catch( Exception $e ) {
 			$this->Session->setFlash("<h1>Oops!</h1><p>Couldn't add that record - do you need to create the zone first?</p>");
 		}

@@ -40,3 +40,6 @@ The assumption is also made that you have the CakePHP framework installed at /op
     Require valid-user
 ```
 
+5. Finally, browse to http://<yourserver>/pdnsedit. Hopefully you'll be prompted to log in and you'll see a list of domains etc.
+
+

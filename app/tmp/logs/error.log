@@ -7342,3 +7342,26 @@
 2012-07-12 19:40:14 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 /var/www/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-08-29 14:52:07 Error: [MissingActionException] Action DomainsController::searchDomains() could not be found.
+#0 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DomainsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-11 15:45:58 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-11 15:55:13 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-20 15:16:48 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-21 15:41:10 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-21 15:41:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-04 17:02:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

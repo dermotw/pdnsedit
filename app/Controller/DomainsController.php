@@ -65,11 +65,13 @@ class DomainsController extends AppController {
 
 	public function edit($id = null) {
 		$this->paginate = array(
-			'conditions' => array('domain_id' => $id),
+			'conditions' => array('domain_id' => $id, 'type !=' => 'SOA'),
 			'limit' => 15,
 		);
 		$records = $this->paginate('Record');
 		$domain = $this->Domain->findById($id);
+		$soa = $this->Domain->Record->findByDomainIdAndType( $id, 'SOA' );
+		$this->set('soa', $soa);
 		$this->set('domain', $domain);
 		$this->set('records', $records);
 	}
