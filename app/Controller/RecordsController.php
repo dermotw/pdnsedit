@@ -49,6 +49,11 @@ class RecordsController extends AppController {
 		$soaContent['2'] = $dnsSerial;
 		$theSOA['Record']['content'] = implode( ' ', $soaContent );
 
+		if ( $this->request->is('ajax') ) { 
+			$this->layout = 'ajax'; 
+			$this->set( 'ajax', true );
+		}
+
 		try {
 			if( $this->Record->save( $recordData ) ) {
 				$this->Session->setFlash('<h1>Record added!</h1><p>Nice one.</p>');

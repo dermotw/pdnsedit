@@ -65,15 +65,15 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
  <div class="span9">
  <table class='table table-striped'>
   <thead>
-   <tr><th colspan='5'>
+   <tr><th colspan='6'>
     <?php echo $this->Paginator->prev(); ?>
     <?php echo $this->Paginator->numbers( array( 'first' => 2, 'last' => 2, 'modulus' => 3 )); ?>
     <?php echo $this->Paginator->next(); ?>
    </th></tr>
-   <th><h4>Name</h4></th><th><h4>Type</h4></th><th><h4>Content</h4></th><th><h4>TTL</h4></th><th>&nbsp;</th></tr>
+   <th><h4>Name</h4></th><th><h4>Type</h4></th><th><h4>Content</h4></th><th><h4>TTL</h4></th><th>Prio</th><th>&nbsp;</th></tr>
   </thead>
   <tfoot>
-   <tr><th colspan='5'>
+   <tr><th colspan='6'>
     <?php echo $this->Paginator->prev(); ?>
     <?php echo $this->Paginator->numbers( array( 'first' => 2, 'last' => 2, 'modulus' => 3 )); ?>
     <?php echo $this->Paginator->next(); ?>
@@ -82,8 +82,8 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
   <tbody>
    <tr>
     <form id='frmAddRecord' action='/Record/Add' method='POST' class='form'>
-     <td><input type='text' name='name' placeholder='example.<?php echo $theDomain['name']; ?>' /></td>
-     <td><select name='type' class='span2'>
+     <td><input id='frmAddName' type='text' name='name' class='input-large' placeholder='example.<?php echo $theDomain['name']; ?>' /></td>
+     <td><select id='frmAddType' name='type' class='span2' style='width: 70px;'> 
       <option>A</option>
       <option>MX</option>
       <option>NS</option>
@@ -94,8 +94,9 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
       <option>SPF</option>
       <option>PTR</option>
      </select></td>
-     <td><input type='text' name='content' placeholder='www.<?php echo $theDomain['name']; ?>' /></td>
-     <td><input type='text' name='ttl' class='span2' value='86400' /></td>
+     <td><input id='frmAddContent' type='text' class='input-medium' name='content' placeholder='www.<?php echo $theDomain['name']; ?>' /></td>
+     <td><input id='frmAddTTL' type='number' class='input-small' name='ttl' class='span2' value='86400' style='width: 50px;' /></td>
+     <td><input id='frmAddPrio' type='number' class='input-mini' name='prio' class='span2' value='0'/></td>
      <td><a href='#' id='btnAdd'><i class='icon-plus'></i></a></td>
     </form>
    </tr>
@@ -105,6 +106,7 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
     <td><?php echo $aRecord['Record']['type']; ?></td>
     <td><?php echo $aRecord['Record']['content']; ?></td>
     <td><?php echo $aRecord['Record']['ttl']; ?></td>
+    <td><?php echo $aRecord['Record']['prio']; ?></td>
     <td>
      <a href='#' title='Edit this record' class='recEdit' 
 	rec-id='<?php echo $aRecord['Record']['id']; ?>'
@@ -135,6 +137,11 @@ echo $this->element('confirm', array(
 	'confirmAction' => '#' . $theDomain['id']
 ));
 echo $this->element('editRecord');
+echo $this->element('ok', array(
+	'okayId' => 'addOkay',
+	'okayHdr' => 'Record added!',
+	'okayText' => 'Your new record has been added.',
+));
 ?>
 <script>
 // add the tooltip stuffs
@@ -163,5 +170,28 @@ $(".recEdit").click( function() {
 	$("#recContent").attr('value', recContent);
 	$("#editRecord").modal('show');
 	$("#RecordEditForm").attr( 'action', '/Records/updateRecord/' + recId );
+});
+
+// Add a new record!
+//
+$("#btnAdd").click( function() {
+	var recName = $("#frmAddName").val();
+	var recType = $("#frmAddType").val();
+	var recContent = $("#frmAddContent").val();
+	var recTTL = $("#frmAddTTL").val();
+	var recPrio = $("#frmAddPrio").val();
+	var theDomain = '<?php echo $theDomain['name']; ?>';
+	$.post('/Records/add', { 
+		 domain: theDomain, 
+		 name: recName,
+		 type: recType,
+		 content: recContent,
+		 ttl: recTTL,
+		 prio: recPrio },
+		function(data) {
+			$("#okBody").html(data);
+			$("#okDialog").modal('show');
+		}
+	);
 });
 </script>

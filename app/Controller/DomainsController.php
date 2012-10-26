@@ -67,6 +67,7 @@ class DomainsController extends AppController {
 		$this->paginate = array(
 			'conditions' => array('domain_id' => $id, 'type !=' => 'SOA'),
 			'limit' => 15,
+			'order' => 'name ASC'
 		);
 		$records = $this->paginate('Record');
 		$domain = $this->Domain->findById($id);

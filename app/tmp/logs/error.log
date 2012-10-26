@@ -7365,3 +7365,49 @@
 2012-10-04 17:02:35 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-10-24 15:07:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 15:34:39 Error: [MissingActionException] Action RecordsController::quick_add() could not be found.
+#0 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-24 15:37:06 Error: [MissingActionException] Action DomainsController::searchDomains() could not be found.
+#0 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DomainsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-24 15:37:31 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 15:59:51 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 16:00:01 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/ip-dev.imagine.ie/app/Controller/RecordsController.php, line 52]
+2012-10-24 16:00:01 Error: [FatalErrorException] syntax error, unexpected '{'
+#0 /opt/frameworks/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/ip-dev...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/ip-dev...', 52, Array)
+#2 /opt/frameworks/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/ip-dev...', 52, Array)
+#3 /opt/frameworks/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-24 16:00:42 Error: Fatal Error (1): Call to undefined method RecordsController::layout() in [/var/www/ip-dev.imagine.ie/app/Controller/RecordsController.php, line 52]
+2012-10-24 16:00:42 Error: [FatalErrorException] Call to undefined method RecordsController::layout()
+#0 /opt/frameworks/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/ip-dev...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/ip-dev...', 52, Array)
+#2 /opt/frameworks/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/ip-dev...', 52, Array)
+#3 /opt/frameworks/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-24 17:42:55 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/ip-dev.imagine.ie/app/Controller/RecordsController.php, line 54]
+2012-10-24 17:42:55 Error: [FatalErrorException] syntax error, unexpected '='
+#0 /opt/frameworks/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/ip-dev...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/ip-dev...', 54, Array)
+#2 /opt/frameworks/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/ip-dev...', 54, Array)
+#3 /opt/frameworks/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-24 22:05:07 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
