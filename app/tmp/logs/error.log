@@ -7417,3 +7417,154 @@
 2012-12-16 20:29:03 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-25 11:25:58 Error: [MissingControllerException] Controller class RecordController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-25 11:59:01 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 11:59:04 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:00:20 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:28:43 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:29:02 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:29:47 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:30:53 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:31:14 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:31:28 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:31:53 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:32:01 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:32:29 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:33:14 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:34:26 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/ip-dev.imagine.ie/app/Controller/RecordsController.php, line 105]
+2013-01-25 12:34:26 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /opt/frameworks/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/ip-dev...', 105)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/ip-dev...', 105, Array)
+#2 /opt/frameworks/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/ip-dev...', 105, Array)
+#3 /opt/frameworks/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-25 12:34:38 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:35:00 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:36:28 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:36:37 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:37:25 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:37:58 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-25 12:40:20 Error: [MissingViewException] View file "/var/www/ip-dev.imagine.ie/app/View/Records/soa_update.ctp" is missing.
+#0 /opt/frameworks/cakephp/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /opt/frameworks/cakephp/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

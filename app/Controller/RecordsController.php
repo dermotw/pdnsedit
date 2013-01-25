@@ -81,6 +81,36 @@ class RecordsController extends AppController {
 		$this->Record->save( $data );
 		$this->set( compact( 'data', 'oldData' ) );
 	}
+
+	public function soaUpdate( $id = null ) {
+		// Get the ID for the existing SOA record...
+		//
+		$theDomain = $this->data['domain'];
+		$domainInfo = $this->Record->Domain->findByName( $theDomain );
+		$theSOA = $this->Record->findByDomainIdAndType( $domainInfo['Domain']['id'], 'SOA' );
+		$soaContent = $this->data['mname'] . ' ' .
+			      $this->data['rname'] . ' ' .
+			      $this->data['snum'] . ' ' .
+			      $this->data['refresh'] . ' ' .
+			      $this->data['retry'] . ' ' .
+			      $this->data['expire'] . ' ' .
+			      $this->data['minttl'] . ' ';
+		$theSOA['Record']['content'] = $soaContent;
+
+		if ( $this->request->is('ajax') ) { 
+			$this->layout = 'ajax'; 
+			$this->set( 'ajax', true );
+		}
+
+		try {
+			$this->Record->save( $theSOA );
+			$this->Session->setFlash("<h1>SOA Updated!</h1><p>That's nice!</p>");
+			
+		} catch ( Exception $e ) {
+			$this->Session->setFlash("<h1>Oops!</h1><p>Couldn't update the SOA for some reason :-(</p>");
+		}
+
+	}
 }
 
 ?>

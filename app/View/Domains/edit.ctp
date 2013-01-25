@@ -60,6 +60,11 @@ $soaFields = preg_split( '/ /', $theSOA['Record']['content'], -1 );
      <input type="text" class="input-medium" id="minttl" value="<?php echo $soaFields[6] ?>">
     </div>
    </div>
+   <div class="control-group">
+    <div class="controls">
+     <input id='soaUpdate' type="button" class="btn btn-primary" value="Go!">
+    </div>
+   </div>
   </form>
  </div>
  <div class="span9">
@@ -139,7 +144,7 @@ echo $this->element('confirm', array(
 echo $this->element('editRecord');
 echo $this->element('ok', array(
 	'okayId' => 'addOkay',
-	'okayHdr' => 'Record added!',
+	'okayHdr' => 'Record Added/Updated!',
 	'okayText' => 'Your new record has been added.',
 ));
 ?>
@@ -188,6 +193,33 @@ $("#btnAdd").click( function() {
 		 content: recContent,
 		 ttl: recTTL,
 		 prio: recPrio },
+		function(data) {
+			$("#okBody").html(data);
+			$("#okDialog").modal('show');
+		}
+	);
+});
+
+// update the SOA fields
+//
+$("#soaUpdate").click( function() {
+	var mname = $("#mname").val();
+	var rname = $("#rname").val();
+	var snum = $("#snum").val();
+	var refresh = $("#refresh").val();
+	var retry = $("#retry").val();
+	var expire = $("#expire").val();
+	var minttl = $("#minttl").val();
+	var theDomain = '<?php echo $theDomain['name']; ?>';
+	$.post('/Records/soaUpdate', {
+		domain: theDomain,
+		mname: mname,
+		rname: rname,
+		snum: snum,
+		refresh: refresh,
+		retry: retry,
+		expire: expire,
+		minttl: minttl },
 		function(data) {
 			$("#okBody").html(data);
 			$("#okDialog").modal('show');
