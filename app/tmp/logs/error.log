@@ -7568,3 +7568,13 @@
 #3 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest), Object(CakeResponse))
 #4 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2013-02-08 16:33:48 Error: [MissingActionException] Action DomainsController::searchDomains() could not be found.
+#0 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DomainsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-08 16:34:29 Error: [MissingActionException] Action DomainsController::searchDomains() could not be found.
+#0 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DomainsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

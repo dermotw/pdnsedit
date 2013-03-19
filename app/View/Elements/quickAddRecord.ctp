@@ -21,7 +21,6 @@ $("#recAddBtn").click( function() {
         var recTTL = 86400;
         var recPrio = 10;
         var theDomain = $("#recDomain").val();
-	alert( theDomain );
         $.post('/Records/add', {
                  domain: theDomain,
                  name: recName,
