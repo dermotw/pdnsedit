@@ -7578,3 +7578,24 @@
 #1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DomainsController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-06-12 15:33:40 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-04 09:31:43 Error: [MissingActionException] Action DomainsController::searchDomains() could not be found.
+#0 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DomainsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-04 09:31:59 Error: [MissingActionException] Action DomainsController::searchDomains() could not be found.
+#0 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DomainsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-04 09:35:07 Error: [MissingActionException] Action DomainsController::searchDomains() could not be found.
+#0 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/frameworks/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DomainsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-07-16 12:18:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/ip-dev.imagine.ie/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

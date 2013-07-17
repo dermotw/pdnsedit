@@ -25,7 +25,7 @@ class RecordsController extends AppController {
 
 		// Need to see if the record is a PTR
 		//
-		if ( $this->data['type'] == 'PTR' ) {
+		if ( $this->data['type'] == 'PTR' and $theDomain == '' ) {
 			// Extract the PTR zone by removing the first part of xxx.xxx.xxx.xxx.in-addr.arpa
 			//
 			preg_match( '/^\d{1,3}\.(\d{1,3}\.\d{1,3}\.\d{1,3}\.in-addr\.arpa)/', $this->data['name'], $matches );
